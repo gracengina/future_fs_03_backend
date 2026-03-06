@@ -4,7 +4,13 @@ require('dotenv').config();
 const db = require('./db');
 
 const app = express();
-app.use(cors());
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://future-fs-03-frontend.vercel.app/',
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 app.use(express.json());
 
 // 1. Health Check Endpoint
