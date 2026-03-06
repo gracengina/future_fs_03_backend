@@ -7,7 +7,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://future-fs-03-frontend.vercel.app/',
+  origin: 'https://whisknwhip.vercel.app/',
   methods: ['GET', 'POST'],
   credentials: true
 }));
